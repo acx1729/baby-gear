@@ -25,4 +25,37 @@
     background-color: #f5e6d6;
     color: #2d2218;
   }
+
+  /* Less gap between h1 and the intro paragraph */
+  .prose h1 + p {
+    margin-top: 0.2em;
+  }
+
+  /* Tighter dividers */
+  .prose hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  /* Less gap between h2 and h3 that follows */
+  .prose h2 + h3 {
+    margin-top: 0.6em;
+  }
+
+  /* Tighten gap between label lines and their list */
+  .prose p + ul,
+  .prose p + ol {
+    margin-top: 0.2em;
+  }
+
+  /* Pull bullet indent in */
+  .prose ul,
+  .prose ol {
+    padding-left: 1.1em;
+  }
+
+  /* Less space above h3 after a paragraph */
+  .prose p + h3 {
+    margin-top: 1em;
+  }
 }
