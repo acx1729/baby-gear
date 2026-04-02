@@ -1,3 +1,11 @@
 ---
-return Astro.redirect(`${import.meta.env.BASE_URL}guide/`);
+import { getEntry, render } from 'astro:content';
+import DocLayout from '../layouts/DocLayout.astro';
+
+const doc = await getEntry('docs', 'guide');
+const { Content, headings } = await render(doc);
 ---
+
+<DocLayout title={doc.data.title} currentSlug={doc.id} headings={headings}>
+  <Content />
+</DocLayout>
