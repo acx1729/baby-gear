@@ -5,7 +5,7 @@ order: 3
 
 # Feeding
 
-Formula, breast pumping, bottles, and the tools that keep feeding safe. For the rules on how much to feed, milk temperature, and nipple flow — see [The Playbook](/baby-gear/playbook/).
+Formula, breast pumping, bottles, and the tools that keep feeding safe. For the rules on how much to feed, milk temperature, and nipple flow — see [The Playbook](/playbook/).
 
 ---
 
@@ -73,7 +73,7 @@ Formula, breast pumping, bottles, and the tools that keep feeding safe. For the 
 - 5 nipple flow rates. Wide neck, few parts.
 - Buy both 4oz (slow flow) and 8oz (medium flow) packs.
 
-> 💡 **See [The Playbook](/baby-gear/playbook/)** for detailed nipple flow rate and burping guidance.
+> 💡 **See [The Playbook](/playbook/)** for detailed nipple flow rate and burping guidance.
 
 **Cost:** ~$55 for both 4-packs
 

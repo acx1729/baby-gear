@@ -122,7 +122,7 @@ The changing station, diapers, wipes, bath kit, and skin care. You'll spend more
 
 ## Bath Kit
 
-> ⚠️ **Don't over-bathe.** Every 3rd or 4th day is enough. Water-only on off days. See [The Playbook](/baby-gear/playbook/).
+> ⚠️ **Don't over-bathe.** Every 3rd or 4th day is enough. Water-only on off days. See [The Playbook](/playbook/).
 
 > 💡 **Use the tub in the shower.** Easier to control water, faster to fill and drain. Much better than bending over a bathtub.
 

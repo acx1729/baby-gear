@@ -5,7 +5,7 @@ order: 1
 
 # What We Bought and Why
 
-We spent about **$8,060** setting up for V.G. — not counting the breast pump (insurance covered most of it) and ongoing diapers/wipes. Every item here earned its place by solving a real problem, and we cut things that didn't (see [The Playbook](/baby-gear/playbook/) for what to skip).
+We spent about **$8,060** setting up for V.G. — not counting the breast pump (insurance covered most of it) and ongoing diapers/wipes. Every item here earned its place by solving a real problem, and we cut things that didn't (see [The Playbook](/playbook/) for what to skip).
 
 ---
 
@@ -32,19 +32,19 @@ We spent about **$8,060** setting up for V.G. — not counting the breast pump (
 
 Organized by **where you set it up** — because that's how you'll actually shop and assemble.
 
-### [Nursery](/baby-gear/nursery/) — ~$4,800
+### [Nursery](/nursery/) — ~$4,800
 
 Sleep, monitoring, air quality, lighting, and the chair you'll live in at 3 AM. The Cradlewise crib is the biggest single purchase and replaces five separate devices.
 
-### [Feeding](/baby-gear/feeding/) — ~$620 + insurance
+### [Feeding](/feeding/) — ~$620 + insurance
 
 Formula, breast pumping, bottles, and temperature safety. The Baby Brezza and the food thermometer made the biggest difference day-to-day.
 
-### [Changing & Bath](/baby-gear/changing-and-bath/) — ~$600 + ongoing
+### [Changing & Bath](/changing-and-bath/) — ~$600 + ongoing
 
 Changing station, diapers, bath kit, and skin care. The trick is having everything within arm's reach.
 
-### [On the Go](/baby-gear/transport/) — ~$2,350
+### [On the Go](/transport/) — ~$2,350
 
 Car seat, stroller, travel gear, and the carrier/bouncer you'll use every day.
 
