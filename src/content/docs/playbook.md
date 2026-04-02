@@ -1,5 +1,6 @@
 ---
 title: The Playbook
+order: 2
 ---
 # V.G.'s Baby Gear — The Playbook
 
@@ -179,7 +180,7 @@ If you're concerned, talk to your pediatrician. Don't put anything in the crib t
 
 ## Bathing
 
-**Follow your pediatrician's guidance on frequency.** At our 2-month appointment, the doctor told us V.G.'s dry skin was from bathing too often. She said every 3rd or 4th day is enough. On the days in between, if baby is smelly, wash with water only — no soap. Alternate between soap and no-soap washes. Autoimmune and skin sensitivity issues are real. Don't over-bathe.
+**Don't over-bathe.** At our 2-month appointment, the doctor told us V.G.'s dry skin was from bathing too often. She said every 3rd or 4th day is enough. On the days in between, if baby is smelly, wash with water only — no soap. Alternate between soap and no-soap washes. Autoimmune and skin sensitivity issues are real. Don't over-bathe.
 
 **Use the tub in the shower.** We strongly recommend placing the baby bathtub in the shower. It's easier to control the water, faster to fill and drain, and you can rinse baby with the shower head or the Frida sprayer. Much more practical than bending over a bathtub.
 
@@ -201,4 +202,8 @@ It lacks control over suction strength — you get preset levels instead of bein
 
 ### Milk warmers — avoid.
 
-They don't measure the actual temperature of the milk. They rely on timing, which varies depending on how much milk is in the bottle, starting temperature, and the container. This means you can't trust the output temperature. Esophagus burns and injuries from overheated milk are a real risk. Use the Baby Brezza Formula Pro — it dispenses at a set temperature every time. For breast milk, use a food thermometer to check before feeding. Always.
+Nearly all major milk warmers work the same way: they heat a water bath or steam chamber around the bottle and run on a timer. They measure the temperature of the *medium* (the water or steam), not the milk itself. The timer shuts off based on how hot the medium gets — not based on what temperature the milk has actually reached.
+
+This means the output temperature varies every time depending on how much milk is in the bottle, the starting temperature of the milk (fridge-cold vs. room temp), and — critically — the bottle material. A borosilicate glass bottle (like the Philips Avent Natural) transfers heat differently than a thin plastic bottle (like Dr. Brown's) or a thick polypropylene one. The same warmer on the same setting will produce noticeably different milk temperatures across these bottles. Glass holds heat longer and overshoots more easily. Thin plastic heats fast but unevenly.
+
+The result: there is no setting you can trust to be consistent. Esophagus burns and injuries from overheated milk are a real risk — and they happen more than people think. Use the Baby Brezza Formula Pro — it dispenses at a set temperature every time. For breast milk, use a food thermometer to check before feeding. Always.

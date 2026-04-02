@@ -1,0 +1,1931 @@
+# ============================================================================
+# V.G.'s Baby Gear Registry — v1.2
+# Single source of truth. UI reads this directly.
+# ============================================================================
+#
+# TIMING TIERS (day offsets from birth, N=0)
+#   N-90   Insurance pipelines, rush-fee penalties
+#   N-45   Big-ticket, return-window-sensitive
+#   N-30   Large items needing install or baseline time
+#   N-15   Amazon Prime sweep — standard items, light setup
+#   N-7    Grab-and-go consumables
+#   N-0    App downloads
+#   N+15   Post-birth — not needed in the first two weeks
+#   N+60   Post-birth — buy when you actually need it
+#
+# STATUS (items)    : to-buy | ordered | delivered | skipped
+# STATUS (tasks)    : pending | done | skipped
+# PRIORITY          : essential | recommended | optional
+# PURCHASE_TYPE     : one-time | consumable | subscription
+# USER              : baby | parent | both
+# ============================================================================
+
+meta:
+  version: "1.2"
+  due_date: null
+  baby_name: "V.G."
+  created: "2025-06-01"
+  updated: "2025-06-01"
+
+items:
+
+  # ==========================================================================
+  # N-90 — Insurance pipelines, rush-fee penalties
+  # ==========================================================================
+
+  - id: cradlewise-crib
+    name: Cradlewise Smart Crib
+    category: sleep
+    system: sleep-monitoring
+    purchase_type: one-time
+    user: baby
+    priority: essential
+    status: to-buy
+    price: 1999.00
+    price_extras:
+      tax: 160.00
+      subscription_annual: 200.00
+      protection_plan: 120.00
+    price_total_first_year: 2479.00
+    price_note: "Nurture plan ($200/yr) for full app features. Protection plan worth it if moving."
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -90
+      need_by: -14
+      use_start: 0
+      use_end: 730
+    shipping:
+      standard: { lead_days: 14, cost: 0 }
+      rush: { lead_days: 7, cost: 100.00 }
+      express: { lead_days: 3, cost: 250.00 }
+      note: "Delivery scheduled up to 1 week after order. Rush/express cost extra — order at N-90 for free standard."
+    tags: [monitor, white-noise, bassinet, crib, camera, sleep-tracking]
+    summary: "The crib. Replaces bassinet, crib, video monitor, white noise machine, and mattress."
+    why:
+      - "AI detects stirring before baby cries and bounces to soothe back to sleep. Saved us countless trips."
+      - "One purchase replaces ~$2,000+ in separate gear."
+      - "Sam Altman recommended it."
+    details:
+      - "Converts from bassinet to crib — elevated at first, lowers as baby grows"
+      - "Learns sleep patterns and adapts"
+      - "App tracks duration, wake-ups, patterns"
+      - "Alerts for crying, stirring, waking"
+      - "HD camera, night vision, room temp sensor"
+      - "White/pink/brown noise + Spotify"
+      - "Organic mattress, protector, two fitted sheets included"
+    tips:
+      - "45 minutes to assemble — do it in baby's room."
+      - "Order at N-90 for free standard shipping."
+    warnings: []
+    links:
+      direct: "https://cradlewise.com/product/cradlewise-smart-crib/v7/"
+
+  - id: spectra-synergy-gold
+    name: Spectra Synergy Gold Breast Pump
+    category: feeding
+    system: feeding-pumping
+    purchase_type: one-time
+    user: parent
+    priority: essential
+    status: to-buy
+    price: 0.00
+    price_note: "Insurance covered via Aeroflow Breastpumps. Check your plan."
+    hsa_fsa: false
+    insurance: true
+    timing:
+      buy_by: -90
+      need_by: -14
+      use_start: 0
+      use_end: 365
+    shipping:
+      lead_days: 14
+      note: "Aeroflow ships after insurance approval — allow 2–4 weeks for the full process."
+    tags: [pump, breast-milk, dual-motor]
+    summary: "Primary breast pump — hospital-grade suction for daily use."
+    why:
+      - "Dual independent motors — adjust each side separately."
+      - "Quiet enough to use while baby sleeps."
+      - "Closed system prevents milk entering tubing."
+    details:
+      - "5 massage modes, suction up to 270 mmHg"
+      - "Touch screen LCD with timer and mute"
+      - "Night light"
+      - "Two flange sizes (24mm, 28mm), bottles, backflow protectors, tubing"
+      - "AC powered"
+      - "2-year motor warranty, 90-day parts"
+    tips: []
+    warnings:
+      - "Do NOT buy the portable version. Preset suction levels only — no fine control. Get this + eufy wearable."
+    links:
+      direct: "https://aeroflowbreastpumps.com/spectra-synergy-gold-double-electric-breast-pump"
+
+  # ==========================================================================
+  # N-45 — Big-ticket, return-window-sensitive
+  # ==========================================================================
+
+  - id: orbit-g5-car-seat
+    name: Orbit Baby G5+ Infant Car Seat with Base
+    category: transport
+    system: orbit-modular
+    purchase_type: one-time
+    user: baby
+    priority: essential
+    status: to-buy
+    price: 550.00
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -45
+      need_by: -14
+      use_start: 0
+      use_end: 450
+    shipping:
+      lead_days: 7
+      note: "Order at N-45 — 60-day return window covers through birth. Buy direct from Orbit."
+    tags: [car-seat, infant, rear-facing, side-impact, faa-approved]
+    summary: "Rear-facing car seat, birth to ~12–15 months. Deep bucket, full side impact protection."
+    why:
+      - "360° rotating base — load baby standing upright, no leaning into the car."
+      - "Full EPP foam side impact — most protection we found."
+      - "SmartHub docks onto stroller frame. No adapters."
+      - "JPMA certified. Founded by two Stanford engineers."
+    details:
+      - "5-point harness with magnetic buckle holders"
+      - "Built-in sunshade with UV coverage"
+      - "FAA approved without base"
+      - "Machine washable liner"
+      - "Base install: 4–5 minutes"
+    tips:
+      - "Buy direct — 60-day free returns, free return shipping, 2-year warranty."
+      - "Extra base is $199 — one per car, just move the seat."
+    warnings: []
+    where_to_buy:
+      - { retailer: orbitbaby.com, note: "Best return policy (60 days, free both ways)." }
+      - { retailer: Nordstrom, note: "In-person demos at select stores." }
+      - { retailer: Babylist, note: "Registry-friendly." }
+    also_considered:
+      - name: Nuna Pipa Urbn
+        pros: "Lighter (~7 vs ~14 lbs), baseless install."
+        cons: "Shorter height (29\" vs 32\"), no modular system."
+    links:
+      direct: "https://orbitbaby.com/products/g5-infant-car-seat"
+      nordstrom: "https://www.nordstrom.com/brands/orbit-baby--8482"
+      babylist: "https://www.babylist.com"
+
+  - id: orbit-g5-stroller
+    name: Orbit Baby G5 Stroller Frame
+    category: transport
+    system: orbit-modular
+    purchase_type: one-time
+    user: both
+    priority: essential
+    status: to-buy
+    price: 650.00
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -45
+      need_by: -14
+      use_start: 0
+      use_end: 1460
+    shipping:
+      lead_days: 7
+      note: "Order with car seat at N-45. Same return window logic."
+    tags: [stroller, modular, one-click-fold]
+    summary: "Stroller chassis — car seat docks via SmartHub."
+    why:
+      - "Single-click collapse, stands on end folded."
+      - "Same SmartHub — no adapters."
+      - "Expands to double stroller."
+    details:
+      - "Aluminum frame, ~20 lbs"
+      - "Front wheel suspension"
+      - "Telescopic handlebar"
+      - "No-pump EVA tires, lockable swivels"
+    tips: []
+    warnings: []
+    links:
+      direct: "https://orbitbaby.com/products/g5-stroller"
+      nordstrom: "https://www.nordstrom.com/s/orbit-baby-g5-complete-stroller/5622229"
+
+  - id: chita-recliner
+    name: CHITA Myles Genuine Leather Swivel Glider Power Recliner
+    category: nursery-furniture
+    system: null
+    purchase_type: one-time
+    user: parent
+    priority: essential
+    status: to-buy
+    price: 527.00
+    price_note: "On sale from $720."
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -45
+      need_by: -14
+      use_start: 0
+      use_end: 730
+    shipping:
+      lead_days: 10
+      note: "Heavy furniture, 7–10 day ship. Order at N-45 to receive, test, and still return within 30 days."
+    tags: [chair, recliner, nursing, glider, leather]
+    summary: "The nursing chair. Hours of feeding, rocking, and getting baby to sleep."
+    why:
+      - "Power recline to 135°."
+      - "270° swivel + glide."
+      - "USB + USB-C charging built in."
+    details:
+      - "Genuine top-grain leather"
+      - "Fits through 27\" doorways"
+      - "350 lb capacity"
+    tips: []
+    warnings: []
+    links:
+      direct: "https://www.chitaliving.com/products/myles-genuine-leather-swivel-glider-power-recliner"
+
+  # ==========================================================================
+  # N-30 — Large items needing install or baseline time
+  # ==========================================================================
+
+  - id: blueair-purifier
+    name: Blueair Classic Pro CP7i Air Purifier
+    category: nursery-environment
+    system: air-quality
+    purchase_type: one-time
+    user: both
+    priority: recommended
+    status: to-buy
+    price: 699.99
+    hsa_fsa: true
+    insurance: false
+    timing:
+      buy_by: -30
+      need_by: -14
+      use_start: 0
+      use_end: 730
+    shipping:
+      lead_days: 5
+      note: "Run for 2+ weeks before baby arrives to baseline nursery air."
+    tags: [air, purifier, hepa, vocs, smart-home]
+    summary: "Keeps nursery air clean — dust, pollen, pet dander, smoke, VOCs."
+    why:
+      - "Cleans 609 sq ft in 12.5 min."
+      - "HINS deactivates viruses and bacteria."
+      - "Night mode for sleep."
+    details:
+      - "99.97% particle removal"
+      - "1-year filter life"
+      - "Blueair app"
+    tips:
+      - "Run on auto — ramps up on VOC spikes from diaper changes."
+    warnings: []
+    links:
+      direct: "https://www.blueair.com/us/air-purifiers/classic-pro-cp7i/3542.html"
+
+  - id: ecobee-thermostat
+    name: ecobee Smart Thermostat Premium (Comfort and Security Bundle)
+    category: nursery-environment
+    system: air-quality
+    purchase_type: one-time
+    user: both
+    priority: recommended
+    status: to-buy
+    price: 244.99
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -30
+      need_by: -14
+      use_start: 0
+      use_end: 730
+    shipping:
+      lead_days: 5
+      note: "Needs DIY or HVAC install. Booking a tech can take 1–2 weeks."
+    tags: [thermostat, temperature, smart-home, alexa, security]
+    summary: "Nursery temperature control + motion/security sensor."
+    why:
+      - "Babies sleep best at 68–72°F."
+      - "SmartSensor in nursery so thermostat optimizes for that room."
+    details:
+      - "Built-in air quality monitoring"
+      - "Door/window sensors in bundle"
+      - "Alexa, Google, Apple Home"
+      - "3-year warranty"
+    tips: []
+    warnings: []
+    links:
+      direct: "https://www.ecobee.com/en-us/smart-home-bundles/comfort-and-security-bundle/"
+
+  - id: blackout-shades
+    name: Blackout Shades (nursery windows)
+    category: nursery-environment
+    system: null
+    purchase_type: one-time
+    user: baby
+    priority: essential
+    status: to-buy
+    price: 60.00
+    price_note: "Price varies by window size. Budget $30–$80 per window."
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -30
+      need_by: -7
+      use_start: 0
+      use_end: 730
+    shipping:
+      lead_days: 7
+      note: "Measure windows first. Custom sizes take longer."
+    tags: [nursery, sleep, light-blocking]
+    summary: "Real blackout shades for the nursery. Not the cheap stick-on kind."
+    why:
+      - "Any light can pull baby out of a sleep cycle."
+      - "Cheap stick-on film peels, leaves residue, and lets light bleed around edges."
+    details:
+      - "Get shades that mount inside the window frame for full light seal"
+      - "Test by standing in the room with lights off — no light leaks"
+    tips:
+      - "Measure and order early — custom sizes add lead time."
+    warnings: []
+    links: {}
+
+  # ==========================================================================
+  # N-15 — Amazon Prime sweep
+  # ==========================================================================
+
+  - id: baby-brezza-formula-pro
+    name: Baby Brezza Formula Pro Advanced
+    category: feeding
+    system: feeding-formula
+    purchase_type: one-time
+    user: parent
+    priority: essential
+    status: to-buy
+    price: 195.00
+    price_note: "On sale from $230."
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 365
+    shipping:
+      lead_days: 2
+      note: "Amazon Prime. Unbox, clean, test-run before baby arrives."
+    tags: [formula, bottle-prep, automation]
+    summary: "Warm mixed formula in seconds. Keurig for baby formula."
+    why:
+      - "Push button, get warm bottle."
+      - "More accurate than hand-scooping — 1 in 3 hand-mixed bottles off by 10%+."
+      - "Set temperature every time — eliminates burn risk."
+    details:
+      - "Body temp, warmer, or room temp; 2–10 oz"
+      - "All formula brands, all bottle types"
+      - "Remembers last settings"
+      - "Dishwasher-safe tank, BPA-free"
+    tips: []
+    warnings: []
+    links:
+      direct: "https://www.babybrezza.com/products/formula-pro-advanced"
+      amazon: "https://www.amazon.com"
+
+  - id: philips-avent-bottles
+    name: Philips Avent Natural Glass Bottles
+    category: feeding
+    system: feeding-bottles
+    purchase_type: consumable
+    user: baby
+    priority: essential
+    status: to-buy
+    price: 55.00
+    price_note: "~$24–$31 per 4-pack. Buy both 4oz (slow) and 8oz (medium)."
+    hsa_fsa: false
+    insurance: false
+    qty: 2
+    qty_note: "One 4-pack of 4oz, one 4-pack of 8oz"
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 365
+      reorder_days: 90
+    shipping: { lead_days: 2, note: "Amazon Prime. Wash and sterilize before first use." }
+    tags: [bottles, glass, anti-colic, nipples]
+    summary: "Glass, anti-colic bottles with flow-controlled nipples."
+    why:
+      - "Borosilicate glass — BPA-free, thermal shock resistant."
+      - "Natural Response nipples — baby controls flow."
+      - "Anti-colic valve."
+    details:
+      - "Wide neck, few parts"
+      - "5 flow rates — start slow, move up as needed"
+    tips:
+      - "See Playbook for nipple flow rate guidance."
+    warnings: []
+    links:
+      amazon_4oz: "https://www.amazon.com/Philips-Natural-Response-SCY910-04/dp/B098YHHV3Q"
+      amazon_8oz: "https://www.amazon.com/Philips-Natural-Response-SCY913-04/dp/B098YVB8BX"
+      nipple_guide: "https://www.usa.philips.com/c-f/XC000017498/which-natural-response-nipple-suits-my-baby-best"
+
+  - id: food-thermometer
+    name: Instant-Read Food Thermometer
+    category: feeding
+    system: feeding-bottles
+    purchase_type: one-time
+    user: parent
+    priority: essential
+    status: to-buy
+    price: 10.00
+    price_note: "Any instant-read digital thermometer works."
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 365
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [feeding, temperature, safety]
+    summary: "Check milk temperature before every feed. Aim for 99–105°F."
+    why:
+      - "The bottle surface is always warmer than the milk inside — touching the outside tells you nothing."
+      - "Milk warmers don't measure actual milk temp. This does."
+      - "Esophagus burns from overheated milk happen more than people think."
+    details:
+      - "Place in milk after warming, read in seconds"
+      - "Also useful later for baby food"
+    tips:
+      - "We place the glass bottle in a bowl of warm water and check with this before every feed."
+    warnings: []
+    links: {}
+
+  - id: bottle-basket
+    name: Dishwasher Bottle Basket
+    category: feeding
+    system: feeding-bottles
+    purchase_type: one-time
+    user: parent
+    priority: recommended
+    status: to-buy
+    price: 10.00
+    price_note: "Various brands on Amazon. Get one that fits your dishwasher rack."
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 365
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [feeding, cleaning, bottles]
+    summary: "Holds bottle parts, nipples, and pump valves in the dishwasher without them falling through the rack."
+    why:
+      - "A dishwasher with a bottle basket replaces a $260 Brezza bottle washer."
+      - "Nipples, valves, and small parts fall through dishwasher racks without one."
+    details:
+      - "Fits in top rack of standard dishwashers"
+    tips: []
+    warnings: []
+    links: {}
+
+  - id: pampers-swaddlers-ultra
+    name: Pampers Swaddlers Ultra (Costco)
+    category: diapering
+    system: null
+    purchase_type: consumable
+    user: baby
+    priority: essential
+    status: to-buy
+    price: 47.99
+    price_note: "Per box at Costco."
+    hsa_fsa: false
+    insurance: false
+    qty: 2
+    qty_note: "2 boxes newborn size."
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 900
+      reorder_days: 21
+    shipping: { lead_days: 0, note: "Costco in-store. Combine with wipes." }
+    tags: [diapers, consumable, bulk]
+    summary: "Diapers. Bulk at Costco."
+    why:
+      - "Ultra label — 20% more absorbent than regular Swaddlers."
+      - "Better fit than Huggies."
+    details:
+      - "Costco takes back unopened boxes if baby outgrows the size."
+    tips: []
+    warnings: []
+    links:
+      costco: "https://www.costco.com"
+
+  - id: pampers-sensitive-wipes
+    name: Pampers Sensitive Wipes (Costco)
+    category: diapering
+    system: null
+    purchase_type: consumable
+    user: baby
+    priority: essential
+    status: to-buy
+    price: 29.99
+    price_note: "Per box at Costco."
+    hsa_fsa: false
+    insurance: false
+    qty: 2
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 900
+      reorder_days: 21
+    shipping: { lead_days: 0, note: "Same Costco trip as diapers." }
+    tags: [wipes, consumable, bulk, sensitive-skin]
+    summary: "Water-based wipes."
+    why:
+      - "Softer and wetter than Huggies."
+      - "Higher water content — easier solid food cleanup at month 6+."
+    details: []
+    tips: []
+    warnings: []
+    links:
+      costco: "https://www.costco.com"
+
+  - id: keekaroo-peanut
+    name: Keekaroo Peanut Wipeable Changing Pad
+    category: changing
+    system: changing-station
+    purchase_type: one-time
+    user: baby
+    priority: essential
+    status: to-buy
+    price: 149.95
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -15
+      need_by: -7
+      use_start: 0
+      use_end: 730
+    shipping: { lead_days: 2, note: "Amazon Prime. Centerpiece of the changing station." }
+    tags: [changing-pad, waterproof, wipeable]
+    summary: "Changing pad — wipeable, no fabric covers."
+    why:
+      - "Waterproof foam, peanut shape keeps baby centered."
+      - "Wipe clean — no covers to launder."
+    details:
+      - "No latex/PVC/BPA, holds 30 lbs"
+    tips:
+      - "Put on a height-adjustable desk, not a dedicated changing table."
+    warnings: []
+    links:
+      amazon: "https://www.amazon.com/Keekaroo-0130009KR-0001-Peanut-Changer-Vanilla/dp/B00KSW970Y"
+      babylist: "https://www.babylist.com/gp/keekaroo-peanut-wipeable-changing-pad/72150/2393867"
+
+  - id: moonsea-changing-liners
+    name: Moonsea Quilted Changing Pad Liners (3-Pack)
+    category: changing
+    system: changing-station
+    purchase_type: one-time
+    user: baby
+    priority: recommended
+    status: to-buy
+    price: 17.99
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 730
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [changing-pad, liner, washable]
+    summary: "Soft liner for Keekaroo — quilted, waterproof, machine washable."
+    why:
+      - "Baby isn't on cold bare foam."
+      - "Non-slip bottom."
+    details:
+      - "Rotate: one on, one in wash, one spare"
+    tips: []
+    warnings: []
+    links:
+      amazon: "https://www.amazon.com/Moonsea-Changing-Waterproof-Non-Slip-Reusable/dp/B0CFD5WBTQ"
+
+  - id: diaper-genie-platinum
+    name: Diaper Genie Platinum Pail Gift Set
+    category: diapering
+    system: changing-station
+    purchase_type: one-time
+    user: parent
+    priority: recommended
+    status: to-buy
+    price: 119.99
+    price_note: "Includes 2 refills (48 bags). Requires Diaper Genie refill bags."
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 900
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [diaper-pail, odor-control]
+    summary: "Diaper pail — contains the smell."
+    why:
+      - "Stainless steel, foot pedal."
+      - "Odor clamps + carbon filter."
+    details:
+      - "Holds 47 newborn diapers"
+    tips: []
+    warnings:
+      - "Requires proprietary refill bags — budget for ongoing cost."
+    links:
+      amazon: "https://www.amazon.com/Diaper-Genie-Platinum-Stainless-Registry/dp/B0DCRP4VG4"
+
+  - id: diaper-genie-refills
+    name: Diaper Genie Easy Roll Refills (3-Pack)
+    category: diapering
+    system: changing-station
+    purchase_type: consumable
+    user: parent
+    priority: recommended
+    status: to-buy
+    price: 24.99
+    price_note: "3-pack = 72 bags. Each bag holds ~30 newborn diapers."
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -15
+      need_by: 0
+      use_start: 0
+      use_end: 900
+      reorder_days: 45
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [diaper-pail, refill, consumable]
+    summary: "Refill bags for the Diaper Genie. Ongoing cost — budget for it."
+    why:
+      - "Pail is useless without refills."
+      - "Regular trash bags don't fit and don't seal odor."
+    details:
+      - "Each roll makes ~24 bags"
+    tips:
+      - "Subscribe and save on Amazon for automatic delivery."
+    warnings: []
+    links:
+      amazon: "https://www.amazon.com"
+
+  - id: honeywell-desk-lamp
+    name: Honeywell HJ1 Desk Lamp with Clamp
+    category: nursery-lighting
+    system: null
+    purchase_type: one-time
+    user: parent
+    priority: recommended
+    status: to-buy
+    price: 99.99
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 730
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [lighting, clamp, changing-station, high-cri]
+    summary: "Clamp light for changing station. CRI 97."
+    why:
+      - "Dual heads cover full changing station."
+      - "CRI 97 — accurate skin color."
+    details:
+      - "3000K–5700K, stepless dimming"
+      - "Clamp fits up to 2.46\""
+      - "No flicker"
+    tips: []
+    warnings: []
+    links:
+      direct: "https://www.honeywellsmartlighting.com/products/honeywell-hj1-desk-lamp-with-clamp"
+
+  - id: honeywell-floor-lamp
+    name: Honeywell F2 LED Floor Lamp
+    category: nursery-lighting
+    system: null
+    purchase_type: one-time
+    user: parent
+    priority: recommended
+    status: to-buy
+    price: 139.99
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 730
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [lighting, floor-lamp, dimmable, remote]
+    summary: "Room lamp — 3000 lumens full bright, dimmable for night feeds."
+    why:
+      - "Full room at 3000 lumens, soft glow for night."
+    details:
+      - "2700K–5000K, tilts 85°–270°"
+      - "Remote with magnetic mount"
+      - "RGB modes"
+    tips: []
+    warnings: []
+    links:
+      amazon: "https://www.amazon.com/Honeywell-Torchieres-SunturaluxTM-Eye-Caring-2700-5000K/dp/B0DLMK92BB"
+
+  - id: amazon-air-monitor
+    name: Amazon Smart Air Quality Monitor
+    category: nursery-environment
+    system: air-quality
+    purchase_type: one-time
+    user: parent
+    priority: recommended
+    status: to-buy
+    price: 69.99
+    hsa_fsa: false
+    insurance: false
+    qty: 2
+    qty_note: "Nursery + living room."
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 730
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [air, monitor, vocs, alexa, smart-home]
+    summary: "Tracks PM 2.5, VOCs, CO, humidity, temperature."
+    why:
+      - "Color LED: green/yellow/red."
+      - "Alexa alerts on drops."
+    details:
+      - "Alexa routines auto-trigger purifier"
+    tips:
+      - "VOC spikes from diaper changes are real."
+    warnings: []
+    links:
+      amazon: "https://www.amazon.com/Amazon-Smart-Air-Quality-Monitor/dp/B08W8KS8D3"
+
+  - id: echo-spot
+    name: Amazon Echo Spot
+    category: nursery-environment
+    system: air-quality
+    purchase_type: one-time
+    user: parent
+    priority: optional
+    status: to-buy
+    price: 79.99
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 730
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [smart-home, alexa, white-noise, clock]
+    summary: "Nursery clock — white noise, smart home voice control."
+    why:
+      - "Auto-dims at night."
+      - "White noise, lullabies, Spotify."
+      - "'Alexa, nursery temperature?'"
+    details:
+      - "Voice routines: dim lights, noise, thermostat"
+      - "No camera"
+    tips: []
+    warnings: []
+    links:
+      amazon: "https://www.amazon.com/All-New-release-Smart-alarm-clock/dp/B0BFCBKXWL"
+
+  - id: mckesson-face-masks
+    name: McKesson Medical Face Masks (Level 1)
+    category: skin-health
+    system: null
+    purchase_type: consumable
+    user: parent
+    priority: recommended
+    status: to-buy
+    price: 10.00
+    price_note: "50 count."
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 180
+      reorder_days: 60
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [hygiene, masks, visitors, medical-grade]
+    summary: "For visitors — RSV and flu season."
+    why:
+      - "ASTM Level 1."
+      - "Softer than cheap masks."
+    details:
+      - "Metal nose bridge"
+      - "Keep box by front door"
+    tips: []
+    warnings: []
+    links:
+      amazon: "https://www.amazon.com/McKesson-Medical-Face-Masks-Level/dp/B09QT6D3QG"
+
+  - id: puredown-pillow-inserts
+    name: Puredown 26x26 Pillow Inserts (Pack of 2)
+    category: seating
+    system: null
+    purchase_type: one-time
+    user: baby
+    priority: recommended
+    status: to-buy
+    price: 40.49
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -15
+      need_by: -3
+      use_start: 0
+      use_end: 365
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [safety, bouncer, cushion]
+    summary: "Floor cushion under bouncer — skull protection."
+    why:
+      - "Soft but firm enough to absorb impact."
+      - "26x26 covers bouncer footprint."
+    details:
+      - "Machine washable"
+    tips: []
+    warnings: []
+    links:
+      amazon: "https://www.amazon.com/puredown-Pillow-Inserts-Alternative-Decorative/dp/B0DQ1BBJCB"
+
+  # ==========================================================================
+  # N-7 — Grab-and-go consumables
+  # ==========================================================================
+
+  - id: aquaphor-baby-set
+    name: Aquaphor Baby Skin Care Set
+    category: changing
+    system: changing-station
+    purchase_type: consumable
+    user: baby
+    priority: essential
+    status: to-buy
+    price: 16.00
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -7
+      need_by: 0
+      use_start: 0
+      use_end: 730
+      reorder_days: 60
+    shipping: { lead_days: 2, note: "Amazon Prime. Always in stock." }
+    tags: [skin-care, diaper-rash, ointment]
+    summary: "Diaper rash barrier — apply after every change."
+    why:
+      - "Healing ointment is the key item."
+      - "Pediatrician's first recommendation."
+    details:
+      - "Ointment + gentle wash + shampoo"
+    tips: []
+    warnings:
+      - "No ghee, coconut oil, seed oils on baby's skin. Pediatrician-recommended only."
+    links:
+      amazon: "https://www.amazon.com/Aquaphor-Baby-Skin-Care-Set/dp/B07Q7SWLB2"
+
+  - id: cerave-cream
+    name: CeraVe Moisturizing Cream
+    category: bath
+    system: bath-kit
+    purchase_type: consumable
+    user: baby
+    priority: essential
+    status: to-buy
+    price: 19.00
+    price_note: "19 oz tub."
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -7
+      need_by: 0
+      use_start: 0
+      use_end: 730
+      reorder_days: 60
+    shipping: { lead_days: 2, note: "Amazon Prime. Always in stock." }
+    tags: [skin-care, moisturizer, eczema-safe, fragrance-free]
+    summary: "Baby moisturizer — ceramides, fragrance-free, eczema-safe."
+    why:
+      - "Hyaluronic acid + 3 ceramides."
+      - "National Eczema Association accepted."
+    details:
+      - "Apply after bath, face and body"
+    tips: []
+    warnings: []
+    links:
+      amazon: "https://www.amazon.com/CeraVe-Hyaluronic-Ceramides-Paraben-Fragrance/dp/B097CHTCJJ"
+
+  - id: mckesson-hand-soap
+    name: McKesson Antimicrobial Lotion Hand Soap
+    category: changing
+    system: changing-station
+    purchase_type: consumable
+    user: parent
+    priority: recommended
+    status: to-buy
+    price: 8.00
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -7
+      need_by: 0
+      use_start: 0
+      use_end: 730
+      reorder_days: 90
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [hygiene, soap, medical-grade]
+    summary: "Medical-grade hand soap — kills bacteria, moisturizes."
+    why:
+      - "Chloroxylenol (PCMX)."
+      - "Aloe keeps hands moisturized."
+    details:
+      - "Neutral pH, pump bottle"
+    tips: []
+    warnings: []
+    links:
+      amazon: "https://www.amazon.com/l-Mckesson-Lotion-53-28087/dp/B00Q5FCQS8"
+
+  - id: flatback-bucket
+    name: Producer's Pride 2-Gallon Flatback Bucket
+    category: changing
+    system: changing-station
+    purchase_type: one-time
+    user: parent
+    priority: recommended
+    status: to-buy
+    price: 5.00
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -7
+      need_by: 0
+      use_start: 0
+      use_end: 365
+    shipping: { lead_days: 0, note: "Tractor Supply in-store." }
+    tags: [changing, rash-care, water]
+    summary: "Warm water bucket for rash rinses."
+    why:
+      - "Wipes irritate rash — warm water works."
+      - "Flat back sits flush, won't tip."
+    details:
+      - "Farm supply bucket — perfect size"
+    tips: []
+    warnings: []
+    links:
+      tractor_supply: "https://www.tractorsupply.com/tsc/product/producers-pride-2-gal-flatback-bucket-red-2463503"
+
+  - id: squeeze-bottles
+    name: BRIGHTFROM Squeeze Bottles 16oz (2-Pack)
+    category: changing
+    system: changing-station
+    purchase_type: one-time
+    user: parent
+    priority: recommended
+    status: to-buy
+    price: 7.35
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: -7
+      need_by: 0
+      use_start: 0
+      use_end: 365
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [changing, rash-care, rinse]
+    summary: "Squeeze rinse for diaper changes."
+    why:
+      - "One-hand control while holding baby."
+    details:
+      - "Condiment bottles — cheap, leak-proof, dishwasher safe"
+    tips: []
+    warnings: []
+    links:
+      amazon: "https://www.amazon.com/BRIGHTFROM-Condiment-Squeeze-Bottles-Squirt/dp/B09FVCRK8V"
+
+  # ==========================================================================
+  # N-0 — App downloads
+  # ==========================================================================
+
+  - id: huckleberry-app
+    name: Huckleberry
+    category: apps
+    system: null
+    purchase_type: subscription
+    user: parent
+    priority: essential
+    status: to-buy
+    price: 0.00
+    price_note: "Free basics."
+    hsa_fsa: false
+    insurance: false
+    timing: { buy_by: 0, need_by: 0, use_start: 0, use_end: 730 }
+    shipping: { lead_days: 0, note: "Download." }
+    tags: [app, tracking, feeding, sleep, diapers]
+    summary: "Track every feed, sleep, diaper. Start from first feed."
+    why:
+      - "One tap start/stop."
+      - "Nursing, bottles, pumping, solids, sleep."
+      - "Share patterns with pediatrician."
+    details: []
+    tips: []
+    warnings: []
+    links:
+      ios: "https://apps.apple.com/app/huckleberry-baby-sleep-tracker/id1238709890"
+      android: "https://play.google.com/store/apps/details?id=com.huckleberry"
+
+  - id: cradlewise-app
+    name: Cradlewise App
+    category: apps
+    system: sleep-monitoring
+    purchase_type: subscription
+    user: parent
+    priority: essential
+    status: to-buy
+    price: 0.00
+    price_note: "Included with Nurture subscription."
+    hsa_fsa: false
+    insurance: false
+    timing: { buy_by: 0, need_by: 0, use_start: 0, use_end: 730 }
+    shipping: { lead_days: 0 }
+    tags: [app, sleep, monitor, crib-control]
+    summary: "Sleep tracking, alerts, crib controls."
+    why: []
+    details: []
+    tips: []
+    warnings: []
+    links: {}
+
+  - id: owlet-app
+    name: Owlet Dream App
+    category: apps
+    system: sleep-monitoring
+    purchase_type: subscription
+    user: parent
+    priority: essential
+    status: to-buy
+    price: 0.00
+    price_note: "Included with Owlet360."
+    hsa_fsa: false
+    insurance: false
+    timing: { buy_by: 0, need_by: 0, use_start: 0, use_end: 540 }
+    shipping: { lead_days: 0 }
+    tags: [app, health, pulse-ox, sleep]
+    summary: "Pulse rate, oxygen, sleep trends."
+    why: []
+    details: []
+    tips: []
+    warnings: []
+    links: {}
+
+  # ==========================================================================
+  # N+15 — Post-birth, not needed first two weeks
+  # ==========================================================================
+
+  - id: owlet-dream-sock
+    name: Owlet Dream Sock
+    category: sleep
+    system: sleep-monitoring
+    purchase_type: one-time
+    user: baby
+    priority: essential
+    status: to-buy
+    price: 299.00
+    price_extras:
+      tax: 24.00
+      protection_plan: 31.00
+    price_total_first_year: 354.00
+    price_note: "Owlet360 subscription adds analytics."
+    hsa_fsa: true
+    insurance: false
+    timing:
+      buy_by: 15
+      need_by: 15
+      use_start: 0
+      use_end: 540
+    shipping: { lead_days: 2, note: "Amazon Prime 2-day." }
+    tags: [monitor, health, pulse-ox, wearable, fda-cleared]
+    summary: "Pulse rate + oxygen tracking while baby sleeps. FDA-cleared."
+    why:
+      - "FDA-cleared pulse oximetry."
+      - "Green glow = normal. Red flash = check baby."
+      - "Works alongside Cradlewise bouncing."
+    details:
+      - "Sock on baby's foot, 16-hour battery"
+      - "4 socks (2 sizes, L+R)"
+    tips:
+      - "Placement matters — follow the guide."
+      - "Limited range from base station."
+    warnings:
+      - "2.4 GHz Wi-Fi only. Disable 5 GHz on mesh to pair."
+    links:
+      amazon: "https://www.amazon.com/Owlet-Dream-Sock-Indicators-Movement/dp/B09NCGQSY9?th=1"
+      direct: "https://owletcare.com/products/owlet-dream-sock"
+
+  - id: eufy-wearable-pump
+    name: eufy Wearable Breast Pump S1 Pro
+    category: feeding
+    system: feeding-pumping
+    purchase_type: one-time
+    user: parent
+    priority: recommended
+    status: to-buy
+    price: 349.99
+    price_note: "Insurance may cover part."
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: 15
+      need_by: 21
+      use_start: 0
+      use_end: 365
+    shipping: { lead_days: 2, note: "Amazon Prime. Spectra already on hand." }
+    tags: [pump, breast-milk, wearable, hands-free]
+    summary: "Hands-free pump — goes inside bra."
+    why:
+      - "Higher output than Spectra portable."
+      - "Warms while pumping — prevents clogs."
+      - "Wireless charging case."
+    details:
+      - "No cords or tubes, app control"
+      - "5 oz/side, BPA-free"
+    tips: []
+    warnings: []
+    links:
+      direct: "https://www.eufy.com/products/t2126"
+      amazon: "https://www.amazon.com"
+
+  - id: babybjorn-carrier-mini
+    name: BabyBjörn Baby Carrier Mini
+    category: carrying
+    system: null
+    purchase_type: one-time
+    user: both
+    priority: essential
+    status: to-buy
+    price: 119.99
+    price_note: "3D Mesh $119.99, Woven/Jersey $99.99."
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: 15
+      need_by: 15
+      use_start: 0
+      use_end: 365
+    shipping: { lead_days: 2, note: "Amazon Prime. Not needed first two weeks." }
+    tags: [carrier, hands-free, hip-healthy, newborn-safe]
+    summary: "Hands-free carrier. Get things done while baby is held."
+    why:
+      - "Newborn-safe with head/neck support."
+      - "Hip-healthy certified."
+      - "Front unclips — lift sleeping baby out."
+    details:
+      - "3 positions, XS–XXL, 3D mesh, machine washable"
+    tips: []
+    warnings: []
+    links:
+      direct: "https://www.babybjorn.com/baby-carriers/baby-carrier-mini/"
+
+  - id: babybjorn-bouncer
+    name: BabyBjörn Bouncer Bliss
+    category: seating
+    system: null
+    purchase_type: one-time
+    user: baby
+    priority: essential
+    status: to-buy
+    price: 229.99
+    price_note: "Woven Mélange."
+    hsa_fsa: false
+    insurance: false
+    timing:
+      buy_by: 15
+      need_by: 15
+      use_start: 0
+      use_end: 730
+    shipping: { lead_days: 2, note: "Amazon Prime. Not needed first two weeks." }
+    tags: [bouncer, chair, no-batteries, hip-healthy]
+    summary: "Set baby down hands-free. No batteries — baby's movement rocks it."
+    why:
+      - "Baby-powered rocking aids digestion."
+      - "Hip-healthy certified."
+      - "4.6 lbs — room to room."
+    details:
+      - "3 height positions, machine washable"
+      - "Folds flat; converts to toddler chair"
+    tips: []
+    warnings: []
+    links:
+      direct: "https://www.babybjorn.com/baby-bouncers/bouncer-bliss/"
+
+  # ==========================================================================
+  # N+60 — Buy when you actually need it
+  # ==========================================================================
+
+  - id: contours-bathtub
+    name: Contours Oasis 4-in-1 Baby Bathtub
+    category: bath
+    system: bath-kit
+    purchase_type: one-time
+    user: baby
+    priority: essential
+    status: to-buy
+    price: 33.74
+    price_note: "Sale from $44.99."
+    hsa_fsa: false
+    insurance: false
+    timing: { buy_by: 60, need_by: 60, use_start: 60, use_end: 730 }
+    shipping: { lead_days: 2, note: "Amazon Prime. No baths needed early." }
+    tags: [bath, tub, newborn-to-toddler]
+    summary: "Baby tub — newborn through toddler."
+    why:
+      - "Quick-dry mesh, less mold."
+      - "Drain plug cycles water without lifting."
+    details:
+      - "Infant seat insert for 0–6 months"
+      - "Non-slip feet, compact storage"
+    tips:
+      - "Use in the shower — easier than bending over the tub."
+    warnings:
+      - "Every 3–4 days is enough. Water-only on off days."
+    links:
+      amazon: "https://www.amazon.com/Contours-Bathtub-Newborn-Toddler-Non-Slip/dp/B0BY5Z2MC3"
+
+  - id: frida-rinse-cup
+    name: Frida Baby Control The Flow Rinse Cup
+    category: bath
+    system: bath-kit
+    purchase_type: one-time
+    user: baby
+    priority: recommended
+    status: to-buy
+    price: 7.99
+    hsa_fsa: false
+    insurance: false
+    timing: { buy_by: 60, need_by: 60, use_start: 60, use_end: 730 }
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [bath, rinse, newborn-safe]
+    summary: "Directs water away from face during bath."
+    why:
+      - "Rain shower and waterfall modes."
+      - "Soft edge molds to forehead."
+    details:
+      - "BPA-free, made in USA"
+    tips: []
+    warnings: []
+    links:
+      amazon: "https://www.amazon.com/Control-Rinser-Handle-Removable-Shower/dp/B099FK72PW"
+
+  - id: frida-bath-sprayer
+    name: Frida Baby Control The Flow Bath Sprayer
+    category: bath
+    system: bath-kit
+    purchase_type: one-time
+    user: baby
+    priority: optional
+    status: to-buy
+    price: 29.99
+    hsa_fsa: false
+    insurance: false
+    timing: { buy_by: 60, need_by: 60, use_start: 60, use_end: 730 }
+    shipping: { lead_days: 2, note: "Amazon Prime." }
+    tags: [bath, sprayer, powered]
+    summary: "Battery-powered bath rinser."
+    why:
+      - "Continuous flow, no refilling cups."
+    details:
+      - "Scrubber + scalp massager attachments"
+    tips: []
+    warnings:
+      - "Suction cup may slip on some tubs."
+    links:
+      amazon: "https://www.amazon.com/Frida-Baby-Attachment-Massager-Waterflow/dp/B0DXXH3S2P"
+
+  - id: kyte-apron-towel
+    name: Kyte Baby Terry Apron Towel
+    category: bath
+    system: bath-kit
+    purchase_type: one-time
+    user: parent
+    priority: optional
+    status: to-buy
+    price: 57.00
+    hsa_fsa: false
+    insurance: false
+    timing: { buy_by: 60, need_by: 60, use_start: 60, use_end: 730 }
+    shipping: { lead_days: 5 }
+    tags: [bath, towel, wearable]
+    summary: "Wearable towel — hands free to hold wet baby."
+    why:
+      - "Ties on like apron."
+      - "Terry cloth absorbs while you carry baby."
+    details:
+      - "Machine washable"
+    tips: []
+    warnings: []
+    links:
+      target: "https://www.target.com/p/kyte-baby-terry-apron-towel-in-fog-fog/-/A-1008880754"
+
+  - id: orbit-stroller-travel-bag
+    name: Orbit Baby G5 Stroller Travel Bag
+    category: travel
+    system: travel-kit
+    purchase_type: one-time
+    user: parent
+    priority: recommended
+    status: to-buy
+    price: 280.00
+    hsa_fsa: false
+    insurance: false
+    timing: { buy_by: 60, need_by: 90, use_start: 90, use_end: 1460 }
+    shipping: { lead_days: 7, note: "Buy before first trip." }
+    tags: [travel, stroller, airline, bag]
+    summary: "Padded stroller bag for airline travel."
+    why:
+      - "Yellow Gate Check flap."
+      - "Wheels — rolls like luggage."
+    details:
+      - "Fits G2, G3, G5 frames"
+    tips: []
+    warnings:
+      - "Does NOT fit the car seat."
+    links:
+      direct: "https://orbitbaby.com/products/g5-travel-bag"
+
+  - id: orbit-carseat-travel-bag
+    name: Orbit Baby Car Seat Travel Bag
+    category: travel
+    system: travel-kit
+    purchase_type: one-time
+    user: parent
+    priority: recommended
+    status: to-buy
+    price: 249.00
+    hsa_fsa: false
+    insurance: false
+    timing: { buy_by: 60, need_by: 90, use_start: 90, use_end: 1460 }
+    shipping: { lead_days: 7, note: "Buy before first trip." }
+    tags: [travel, car-seat, airline, bag]
+    summary: "Padded car seat bag for airline travel."
+    why:
+      - "Reinforced panels, Gate Check flap."
+    details:
+      - "Wheels or backpack carry"
+      - "Fits infant and toddler seats"
+    tips: []
+    warnings: []
+    links:
+      direct: "https://orbitbaby.com/products/car-seat-travel-bag"
+
+  - id: babybjorn-travel-crib
+    name: BabyBjörn Travel Crib Light
+    category: travel
+    system: travel-kit
+    purchase_type: one-time
+    user: baby
+    priority: recommended
+    status: to-buy
+    price: 229.99
+    hsa_fsa: false
+    insurance: false
+    timing: { buy_by: 60, need_by: 90, use_start: 90, use_end: 1095 }
+    shipping: { lead_days: 5, note: "Buy before first trip." }
+    tags: [travel, crib, portable, overnight-sleep]
+    summary: "Portable overnight crib — 13 lbs, sets up in one motion."
+    why:
+      - "Certified for overnight sleep."
+      - "Includes mattress + organic sheet."
+    details:
+      - "Mesh sides, folds flat, machine washable"
+    tips:
+      - "Not needed before month 3–4."
+    warnings: []
+    links:
+      direct: "https://www.babybjorn.com/travel-cribs/travel-crib-light/"
+
+# ============================================================================
+# SKIPS
+# ============================================================================
+
+skips:
+
+  - id: skip-changing-table
+    name: Dedicated Changing Table
+    category: changing
+    reason: "Less safe than a sturdy desk. We used a height-adjustable desk — adjusts to whoever is changing, sturdier, reusable."
+    alternative: keekaroo-peanut
+
+  - id: skip-brezza-bottle-washer
+    name: Baby Brezza Bottle Washer Pro
+    category: feeding
+    price: 260.00
+    reason: "Only fits 4 bottles. Cycle takes a while. 3–4 loads/day. Dishwasher + bottle basket works better."
+    alternative: bottle-basket
+
+  - id: skip-spectra-portable
+    name: Spectra Synergy Gold Portable
+    category: feeding
+    reason: "Preset suction levels only — no fine control. Get the standard + eufy wearable."
+    alternative: spectra-synergy-gold
+
+  - id: skip-milk-warmers
+    name: Milk Warmers (any brand)
+    category: feeding
+    reason: "They heat a water bath or steam on a timer — they measure the medium, not the milk. Output temp varies by milk volume, starting temp, and bottle material (glass vs thin plastic vs polypropylene all transfer heat differently — same warmer, same setting, different milk temps). Glass holds heat longer and overshoots easily. No setting is reliably consistent. Burn risk is real."
+    alternative: baby-brezza-formula-pro
+
+# ============================================================================
+# TASKS
+# ============================================================================
+
+tasks:
+
+  - id: task-newborn-care-class
+    name: Take a newborn care class
+    category: health
+    system: null
+    depends_on: []
+    timing: { need_by: -60, deadline_hard: false }
+    duration_minutes: 180
+    assigned: both
+    status: pending
+    note: "Diaper changing, swaddling, feeding basics."
+
+  - id: task-assemble-crib
+    name: Assemble Cradlewise crib
+    category: sleep
+    system: sleep-monitoring
+    depends_on: [cradlewise-crib]
+    timing: { need_by: -14, deadline_hard: false }
+    duration_minutes: 45
+    assigned: dad
+    status: pending
+    note: "In baby's room. ~45 min."
+
+  - id: task-install-car-base
+    name: Install Orbit car seat base
+    category: transport
+    system: orbit-modular
+    depends_on: [orbit-g5-car-seat]
+    timing: { need_by: -14, deadline_hard: false }
+    duration_minutes: 15
+    assigned: dad
+    status: pending
+    note: "4–5 min per manual. Both cars if two bases."
+
+  - id: task-install-ecobee
+    name: Install ecobee + nursery SmartSensor
+    category: nursery-environment
+    system: air-quality
+    depends_on: [ecobee-thermostat]
+    timing: { need_by: -14, deadline_hard: false }
+    duration_minutes: 45
+    assigned: dad
+    status: pending
+    note: "May need HVAC pro — book early."
+
+  - id: task-install-blackout-shades
+    name: Install blackout shades in nursery
+    category: nursery-environment
+    system: null
+    depends_on: [blackout-shades]
+    timing: { need_by: -7, deadline_hard: false }
+    duration_minutes: 30
+    assigned: dad
+    status: pending
+    note: "Test by standing in room with lights off — no light leaks."
+
+  - id: task-setup-air-monitor
+    name: Set up air monitors + Alexa routines
+    category: nursery-environment
+    system: air-quality
+    depends_on: [amazon-air-monitor, blueair-purifier, echo-spot]
+    timing: { need_by: -7, deadline_hard: false }
+    duration_minutes: 30
+    assigned: dad
+    status: pending
+    note: "Auto-trigger purifier on air quality drops."
+
+  - id: task-setup-changing-station
+    name: Set up changing station
+    category: changing
+    system: changing-station
+    depends_on: [keekaroo-peanut, moonsea-changing-liners, aquaphor-baby-set, mckesson-hand-soap, honeywell-desk-lamp]
+    timing: { need_by: -7, deadline_hard: false }
+    duration_minutes: 20
+    assigned: both
+    status: pending
+    note: "Desk + Keekaroo + liner + lamp + soap + Aquaphor."
+
+  - id: task-wash-bottles
+    name: Wash and sterilize bottles + pump parts
+    category: feeding
+    system: feeding-bottles
+    depends_on: [philips-avent-bottles, bottle-basket]
+    timing: { need_by: -3, deadline_hard: false }
+    duration_minutes: 30
+    assigned: both
+    status: pending
+    note: "Dishwasher with bottle basket, or boil."
+
+  - id: task-pack-hospital-bag
+    name: Pack hospital bag
+    category: admin
+    system: null
+    depends_on: []
+    timing: { need_by: -14, deadline_hard: false }
+    duration_minutes: 60
+    assigned: both
+    status: pending
+    note: "Car seat, insurance cards, going-home outfit, chargers."
+
+  - id: task-masks-by-door
+    name: Place masks by front door
+    category: skin-health
+    system: null
+    depends_on: [mckesson-face-masks]
+    timing: { need_by: 0, deadline_hard: false }
+    duration_minutes: 1
+    assigned: both
+    status: pending
+    note: "For visitors."
+
+  - id: task-add-to-insurance
+    name: Add baby to health insurance
+    category: admin
+    system: null
+    depends_on: []
+    timing: { need_by: 7, deadline_hard: true }
+    assigned: dad
+    status: pending
+    note: "Most plans give 30 days. Call HR day 1."
+
+  - id: task-first-pediatrician
+    name: Schedule first pediatrician visit
+    category: health
+    system: null
+    depends_on: []
+    timing: { need_by: 3, deadline_hard: true }
+    assigned: both
+    status: pending
+    note: "Within 2–3 days of discharge."
+
+  - id: task-birth-certificate
+    name: File birth certificate
+    category: admin
+    system: null
+    depends_on: []
+    timing: { need_by: 10, deadline_hard: true }
+    assigned: dad
+    status: pending
+    note: "Hospital starts it. Follow up with county clerk."
+
+  - id: task-social-security
+    name: Apply for Social Security number
+    category: admin
+    system: null
+    depends_on: []
+    timing: { need_by: 30, deadline_hard: false }
+    assigned: dad
+    status: pending
+    note: "Often done at hospital with birth cert."
+
+  - id: task-learn-diaper-change
+    name: Ask nurses to demo diaper changing
+    category: health
+    system: null
+    depends_on: []
+    timing: { need_by: 1, deadline_hard: false }
+    assigned: both
+    status: pending
+    note: "Before discharge."
+    links:
+      guide: "https://www.pampers.com/en-us/baby/diapering/article/how-to-change-a-diaper"
+
+# ============================================================================
+# PLAYBOOK
+# ============================================================================
+
+playbook:
+
+  - id: lesson-feeding-is-everything
+    topic: feeding
+    title: "Feeding is the single most important thing you do"
+    summary: "Everything else depends on the right food at the right intervals."
+    body:
+      - "If feeding isn't going well, nothing else will either. Take it seriously from day one."
+      - "Trust data over gut feel. We would have caught V.G.'s feeding issue days earlier if we'd been tracking from the start."
+      - "When something feels off, the data gives you evidence to bring to your pediatrician instead of relying on someone's instinct."
+    related_items: [huckleberry-app, baby-brezza-formula-pro, philips-avent-bottles]
+
+  - id: lesson-feeding-formula
+    topic: feeding
+    title: "How much to feed — the 2.5x formula"
+    summary: "Weight (lbs) × 2.5 = total oz/day."
+    body:
+      - "Take baby's weight in pounds, multiply by 2.5. That's the total ounces per day."
+      - "Divide by the number of feeds to get ounces per feed."
+      - "Example: 10 lb baby × 2.5 = 25 oz/day. If feeding every 3 hours (8 feeds), that's about 3 oz per feed."
+      - "Never exceed 32 oz per day — check with your pediatrician if baby seems to want more."
+    related_items: [huckleberry-app]
+
+  - id: lesson-feed-timing
+    topic: feeding
+    title: "Track the hours between feeds"
+    summary: "Newborns eat every 2–3 hours. Set a timer. Don't wait for crying."
+    body:
+      - "By the time they cry from hunger, they're already behind."
+      - "Use Huckleberry to log every feed so you can see patterns and catch problems early."
+    related_items: [huckleberry-app]
+
+  - id: lesson-milk-temperature
+    topic: feeding
+    title: "Milk temperature — rely on data, not touch"
+    summary: "The bottle surface is always warmer than the milk inside. Use a food thermometer."
+    body:
+      - "Aim for 99–105°F."
+      - "Cold milk is fine, but for GI consistency and avoiding throat irritation, keep it steady."
+      - "We place the glass bottle in a bowl of warm water and check with a food thermometer before every feed."
+      - "For formula, the Baby Brezza dispenses at a set temperature."
+      - "Esophagus burns from overheated milk happen more than people think."
+    related_items: [baby-brezza-formula-pro, food-thermometer]
+
+  - id: lesson-green-poop
+    topic: feeding
+    title: "Green poop is fine"
+    summary: "Don't overanalyze diaper color."
+    body:
+      - "Green diapers usually mean undigested fortified iron from formula — it's normal."
+      - "Focus on whether baby is gaining weight and having enough wet diapers, not the color."
+    related_items: []
+
+  - id: lesson-warm-milk-myth
+    topic: feeding
+    title: "Babies don't care if milk is warm"
+    summary: "Babies have poorly developed taste buds. Cold or room temperature milk is perfectly fine."
+    body:
+      - "Warming milk adds risk with no real benefit."
+      - "The bottle surface is always warmer than the milk inside, so what you feel on the outside tells you nothing about what baby is swallowing."
+      - "If you do warm milk, measure with a food thermometer (99–105°F)."
+    related_items: [food-thermometer]
+
+  - id: lesson-no-oils
+    topic: skin
+    title: "Avoid oils on baby's skin"
+    summary: "No ghee, no coconut oil, no seed oils."
+    body:
+      - "People will suggest them. Don't."
+      - "Use only products your pediatrician recommends — CeraVe or Aquaphor are safe choices."
+    related_items: [cerave-cream, aquaphor-baby-set]
+
+  - id: lesson-bottles-air
+    topic: bottles
+    title: "Fussiness after feeds is almost always air"
+    summary: "Air gets in from the wrong nipple flow rate, the wrong bottle, or not burping enough."
+    body:
+      - "Get the nipple flow right, use anti-colic bottles, and burp baby during and after every feed — not just at the end."
+      - "These three things together prevent most colic issues."
+      - "This is one of the most common problems new parents face and one of the easiest to fix."
+      - "Don't wait weeks wondering why baby is fussy — check the bottle, nipple, and burping routine first."
+    related_items: [philips-avent-bottles]
+
+  - id: lesson-nipple-flow
+    topic: bottles
+    title: "Use the right nipple flow rate"
+    summary: "Watch baby's drinking style, not their age."
+    body:
+      - "Philips Avent Natural Response nipples come in 5 flow rates (1 through 5)."
+      - "Too fast → baby gulps air."
+      - "Too slow → baby gets frustrated and swallows air trying harder."
+      - "Start with the nipple that comes with the bottle."
+      - "Move up if baby takes longer than 30 minutes to finish, falls asleep during feeds, or seems frustrated."
+      - "Move down if baby is gulping or milk is leaking from their mouth."
+      - "Enthusiastic drinkers with strong suction often need a lower flow (1 or 2) even as they get older."
+      - "Slow, steady drinkers may need a higher flow (4 or 5) regardless of age."
+    related_items: [philips-avent-bottles]
+    links:
+      guide: "https://www.usa.philips.com/c-f/XC000017498/which-natural-response-nipple-suits-my-baby-best"
+
+  - id: lesson-burping
+    topic: bottles
+    title: "Burp during and after feeds"
+    summary: "Don't wait until the bottle is finished."
+    body:
+      - "Pause halfway through, burp, then continue."
+      - "If baby is squirming or pulling off the bottle, they probably need to burp."
+      - "Hold baby upright against your shoulder and pat gently."
+      - "Some babies need 5 minutes of patience before they'll burp — don't give up after 30 seconds."
+    related_items: []
+
+  - id: lesson-sleep-cycles
+    topic: sleep
+    title: "Babies have fundamentally different sleep cycles"
+    summary: "They are not miniature adults. Any noise or light can pull them out of a cycle they need to complete."
+    body:
+      - "Their cycles are shorter, their bodies are still calibrating, and their reflexes aren't fully developed."
+    related_items: [cradlewise-crib]
+
+  - id: lesson-quiet-dark
+    topic: sleep
+    title: "Keep surroundings whisper quiet and pitch dark"
+    summary: "Babies don't need to be 'familiarized with sound' — they need peace and quiet to sleep."
+    body:
+      - "People will tell you to get baby 'used to noise.' Don't."
+      - "Invest in real blackout shades, not the cheap stick-on kind."
+      - "Keep temperature consistent at 68–72°F."
+    related_items: [ecobee-thermostat, cradlewise-crib, blackout-shades]
+
+  - id: lesson-90-minute-rule
+    topic: sleep
+    title: "The 90-minute rule"
+    summary: "Newborns can only handle about 60–90 minutes of awake time before they need to sleep again."
+    body:
+      - "Keep them up longer and they get overtired — an overtired baby fights sleep harder, not less."
+      - "Once we started putting V.G. back in the crib within that window and letting the Cradlewise and white noise do the rest, everything changed."
+      - "This single fix made the biggest difference in our sleep."
+    related_items: [cradlewise-crib]
+    links:
+      guide: "https://huckleberrycare.com/blog/wake-windows-by-age"
+
+  - id: lesson-nothing-in-crib
+    topic: sleep
+    title: "Nothing in the crib. Ever."
+    summary: "No blankets, no pillows, no stuffed animals, no bumpers."
+    body:
+      - "Only the mattress and an approved fitted sheet."
+      - "Follow the crib manufacturer's guidance — unemotional data, not opinions."
+      - "A crib maker is not going to risk a wrongful death verdict by being overly cautious. If they say bare mattress and fitted sheet only, that's what it should be."
+      - "People will say the approved sheets are overpriced. Spend the money anyway — there are better places to save."
+      - "Pillows and blankets in a crib are a suffocation risk — babies have died from this."
+    related_items: [cradlewise-crib]
+
+  - id: lesson-eyes-open
+    topic: sleep
+    title: "Keep baby in the crib even if they don't look asleep"
+    summary: "Babies sometimes sleep with their eyes open."
+    body:
+      - "If they're quiet and in the crib, leave them."
+      - "Don't pick them up because you think they're awake."
+    related_items: []
+
+  - id: lesson-cry-during-sleep
+    topic: sleep
+    title: "Babies cry during sleep — don't intervene unless it's over a minute"
+    summary: "Short cries and whimpers are normal sleep cycle transitions."
+    body:
+      - "If you rush in at every sound, you'll wake a baby who was about to settle back down on their own."
+      - "Wait at least a minute before going in."
+    related_items: [cradlewise-crib, owlet-dream-sock]
+
+  - id: lesson-flat-head
+    topic: sleep
+    title: "Your baby is not going to get a flat head"
+    summary: "If you're concerned, talk to your pediatrician. Don't put anything in the crib."
+    body:
+      - "Family ordered pillows for the crib while we were still in the hospital — before V.G. even came home."
+      - "Pillows in a crib are a suffocation risk."
+      - "If you're worried about head shape, ask your pediatrician at your monthly visit."
+    related_items: []
+
+  - id: lesson-dont-trust-experts
+    topic: general
+    title: "Don't rely on 'experts' or past experience"
+    summary: "People with kids will confidently tell you how things work based on what they went through. Every baby is different."
+    body:
+      - "Take advice as input, not instruction."
+      - "The most confident advice tends to come from the people closest to you — the ones who've raised kids before and remember it well. That confidence is exactly what makes it hard to push back."
+    related_items: []
+
+  - id: lesson-stomach-ache-story
+    topic: general
+    title: "Story: 'He has a stomach ache'"
+    summary: "V.G. lost 9% of his body weight in 24 hours because the real issue — not enough food — was misdiagnosed as stomach pain."
+    body:
+      - "On day 2, V.G. wasn't eating well and was fussy. We were told it was stomach pain."
+      - "He lost 9% of his body weight in 24 hours."
+      - "The real issue was he wasn't getting enough food."
+      - "Track weight, feed volumes, and wet diapers in Huckleberry. If feeding feels off, don't wait — the numbers will tell you before anyone's guess does."
+    related_items: [huckleberry-app]
+
+  - id: lesson-overtired-story
+    topic: general
+    title: "Story: 'He doesn't want to sleep — he's been sleeping all day'"
+    summary: "Caretakers kept V.G. awake because they thought he'd been sleeping too much. The real problem: he was overtired."
+    body:
+      - "Newborns can only handle 60–90 minutes of awake time."
+      - "Keeping them up longer makes it worse, not better."
+    related_items: [cradlewise-crib]
+
+  - id: lesson-diaper-change-story
+    topic: general
+    title: "Story: 'I know how to change a diaper'"
+    summary: "You probably don't. Unless you've been shown by a medical professional — assume you need to learn."
+    body:
+      - "You might have changed diapers hundreds of times and still be doing it wrong."
+      - "Ask the nurses at the hospital to walk you through it before discharge."
+      - "Don't be embarrassed. Everyone gets it wrong at first."
+    related_items: []
+    links:
+      guide: "https://www.pampers.com/en-us/baby/diapering/article/how-to-change-a-diaper"
+
+  - id: lesson-air-quality
+    topic: environment
+    title: "Monitor air quality. Respond to it."
+    summary: "Diaper changes release VOCs that linger in a closed nursery."
+    body:
+      - "We noticed the air quality monitor turning red in the nursery — VOCs spiking."
+      - "Turns out it was from diaper changes. The chemicals in wipes, creams, and dirty diapers release VOCs that linger in a closed room."
+      - "Now we run the air purifier on auto mode so it ramps up when it detects a spike, and we ventilate after changes when possible."
+    related_items: [amazon-air-monitor, blueair-purifier, ecobee-thermostat]
+
+  - id: lesson-bathing-frequency
+    topic: bath
+    title: "Don't over-bathe"
+    summary: "Every 3rd or 4th day is enough. Water-only on off days."
+    body:
+      - "At our 2-month appointment, the doctor told us V.G.'s dry skin was from bathing too often."
+      - "On the days in between, if baby is smelly, wash with water only — no soap."
+      - "Alternate between soap and no-soap washes."
+      - "Autoimmune and skin sensitivity issues are real."
+    related_items: [contours-bathtub, cerave-cream]
+
+  - id: lesson-tub-in-shower
+    topic: bath
+    title: "Use the tub in the shower"
+    summary: "Place the baby bathtub in the shower, not in the bathtub."
+    body:
+      - "Easier to control the water, faster to fill and drain."
+      - "You can rinse baby with the shower head or the Frida sprayer."
+      - "Much more practical than bending over a bathtub."
+    related_items: [contours-bathtub, frida-bath-sprayer]
+
+  - id: lesson-sleep-resources
+    topic: sleep
+    title: "Sleep reading list"
+    summary: "Essential reading on baby sleep patterns and wake windows."
+    body: []
+    links:
+      sleep_foundation: "https://www.sleepfoundation.org/children-and-sleep"
+      hopkins: "https://www.hopkinsmedicine.org/health/conditions-and-diseases/staying-healthy-during-pregnancy/newborn-sleep-patterns"
+      wake_windows: "https://huckleberrycare.com/blog/wake-windows-by-age"
+
+# ============================================================================
+# SYSTEMS
+# ============================================================================
+
+systems:
+
+  - id: sleep-monitoring
+    name: Sleep Monitoring
+    description: "Crib + wearable monitor + apps."
+    items: [cradlewise-crib, owlet-dream-sock, cradlewise-app, owlet-app]
+
+  - id: feeding-formula
+    name: Formula Feeding
+    items: [baby-brezza-formula-pro]
+
+  - id: feeding-pumping
+    name: Breast Pumping
+    items: [spectra-synergy-gold, eufy-wearable-pump]
+
+  - id: feeding-bottles
+    name: Bottles & Nipples
+    description: "Anti-colic glass bottles, nipples, thermometer, bottle basket."
+    items: [philips-avent-bottles, food-thermometer, bottle-basket]
+
+  - id: changing-station
+    name: Changing Station
+    description: "Pad, liners, rash care, rinse, soap, pail, refills, lamp."
+    items: [keekaroo-peanut, moonsea-changing-liners, aquaphor-baby-set, flatback-bucket, squeeze-bottles, mckesson-hand-soap, diaper-genie-platinum, diaper-genie-refills, honeywell-desk-lamp]
+
+  - id: bath-kit
+    name: Bath Kit
+    description: "Tub, rinse tools, moisturizer, towel."
+    items: [contours-bathtub, frida-rinse-cup, frida-bath-sprayer, cerave-cream, kyte-apron-towel]
+
+  - id: air-quality
+    name: Air Quality System
+    description: "Purifier, sensors, thermostat, voice control."
+    items: [blueair-purifier, amazon-air-monitor, ecobee-thermostat, echo-spot]
+
+  - id: orbit-modular
+    name: Orbit Modular System
+    description: "Car seat + stroller, one hub."
+    items: [orbit-g5-car-seat, orbit-g5-stroller]
+
+  - id: travel-kit
+    name: Travel Kit
+    description: "Airline bags + portable crib."
+    items: [orbit-stroller-travel-bag, orbit-carseat-travel-bag, babybjorn-travel-crib]
