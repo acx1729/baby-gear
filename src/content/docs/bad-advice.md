@@ -3,60 +3,60 @@ title: Bad Advice
 order: 7
 ---
 
-# Bad Advice We Got
+# Trust Data, Not Experience
 
-People with kids will confidently tell you how things work based on what they went through. Their experience is real, but every baby is different. Take advice as input, not instruction.
+Everyone has advice for new parents. Most of it comes from love. Some of it is helpful. But experience with one baby doesn't generalize to every baby, and confidence is not the same as accuracy.
 
-The most confident advice tends to come from the people closest to you — the ones who've raised kids before and remember it well. That confidence is exactly what makes it hard to push back.
+You will hear things said with absolute certainty. That certainty makes the advice hard to question. But medicine advances, safety recommendations change, and every baby is physiologically unique. What worked for one child may not apply to yours. Even your own memory of your first child is an unreliable guide for your second.
 
-Here's where it cost us.
+Bad advice usually isn't dangerous—it's just distracting. You end up chasing the wrong problem while the real one sits right in front of you.
 
----
-
-## "He has a stomach ache."
-
-On day 2, V.G. wasn't eating well and was fussy. We were told it was stomach pain. He lost 9% of his body weight in 24 hours. The real issue was he wasn't getting enough food.
-
-**The fix:** Track weight, feed volumes, and wet diapers in [Huckleberry](https://apps.apple.com/app/huckleberry-baby-sleep-tracker/id1238709890). If feeding feels off, don't wait — the numbers will tell you before anyone's guess does.
+Looking back, our biggest missteps all came down to five traps.
 
 ---
 
-## "He doesn't want to sleep — he's been sleeping all day."
+## Let the numbers do the talking
 
-Caretakers with experience kept V.G. awake because they thought he'd been sleeping too much. He got fussier and refused to sleep. The real problem: he was overtired. Newborns can only handle 60–90 minutes of awake time. Keeping them up longer makes it worse, not better.
+On day two, our son was unusually fussy. The common assumption was a stomach ache, and we went with it. By the time we realized he was actually just hungry, he had lost 9% of his body weight. Later, we assumed testing a bottle on our wrist meant it was "warm enough," ignoring the fact that glass and plastic radiate heat differently than milk holds it.
 
-**The fix:** Follow the [90-minute rule](/sleep-guide/#the-90-minute-rule).
-
----
-
-## "Just feel the bottle." / "Milk warmers are fine."
-
-The bottle surface is always warmer than the milk inside — touching the outside tells you nothing. Milk warmers rely on timing, not temperature measurement, and the output varies depending on volume, starting temp, and container.
-
-**The fix:** Aim for 99–105°F. Use a food thermometer. For formula, the Baby Brezza dispenses at a set temperature. Rely on data, not feel.
+The fix for both was to stop guessing and start measuring. We began tracking feed volumes and wet diapers in an app, and using a thermometer to ensure every bottle hit 99–105°F. Data spots the real issue long before intuition does.
 
 ---
 
-## "I know how to change a diaper."
+## Baby biology doesn't follow adult logic
 
-You probably don't. You might have changed diapers hundreds of times and still be doing it wrong. Unless you've been shown by a pediatrician, pediatric nurse, doula, or attended a newborn care class — assume you need to learn.
+When our son went through a fussy phase, the conventional wisdom we heard was that he was sleeping too much during the day. It seemed entirely logical to keep him awake to tire him out for the night. It backfired completely.
 
-**The fix:** Ask the nurses at the hospital to walk you through it before discharge. [Pampers has a step-by-step guide](https://www.pampers.com/en-us/baby/diapering/article/how-to-change-a-diaper) with videos covering newborns, boys, girls, and toddlers.
-
----
-
-## "He's sleeping on one side — his head will be flat."
-
-Family ordered pillows for the crib while we were still in the hospital — before V.G. even came home. Pillows and blankets in a crib are a suffocation risk — babies have died from this. Follow the crib manufacturer's guidance to the letter. A crib maker is not going to risk a wrongful death verdict by being overly cautious. If they say bare mattress and fitted sheet only, that's what it should be.
-
-People will say the approved sheets are overpriced. Spend the money anyway — there are better places to save.
-
-**The fix:** If you're worried about head shape, ask your pediatrician at your monthly visit. Don't put anything in the crib.
+Newborns aren't miniature adults. A baby kept awake past 90 minutes doesn't get tired; they get overtired, which looks exactly like fighting sleep. Putting them down sooner is the actual fix. The same adult logic gets applied to noise. We often hear that babies "need to get used to it." They don't. Normal household noise knocks them out of crucial developmental sleep cycles. Don't apply adult logic to a developing nervous system.
 
 ---
 
-## "Babies need to get used to noise."
+## Old wives' tales rarely survive a fact-check
 
-No. Babies have shorter sleep cycles than adults. Their bodies are still calibrating and their reflexes aren't fully developed. Any noise can pull them out of a cycle they need to complete. They don't need to be familiarized with sound — they need peace and quiet to sleep.
+Our son was gassy, and the classic advice pointed straight to mom's diet—specifically, the beans she ate for dinner. We almost overhauled everything she was eating.
 
-**The fix:** Read the full [Sleep guide](/sleep-guide/).
+Then we took 30 seconds to ask an AI. Breast milk is synthesized from the mother's blood, not her digestive tract. Mom's stomach gas has no physiological pathway to the baby. That quick search saved us from putting a nursing mother on a severely restrictive diet for absolutely no reason. When advice sounds obvious but burdensome, verify the mechanics of it first.
+
+---
+
+## Trust the true pattern recognizers
+
+When rough patches appeared on our son's skin, the immediate guess was an allergy: the dog, the detergent, the formula. We nearly tore the house apart. The pediatrician looked at it for ten seconds: normal baby acne and dry skin from over-bathing. Less soap and a little CeraVe fixed it entirely.
+
+The difference between everyday experience and medical expertise is sample size. Trust the pediatrician who has seen a rash ten thousand times, not the conventional wisdom based on seeing it once a decade ago.
+
+---
+
+## Safety guidelines aren't legal disclaimers
+
+It's incredibly common to see special pillows marketed to prevent a baby's head from getting flat. They look like a great idea, but crib pillows are actually a suffocation risk.
+
+When a crib manufacturer says "bare mattress and fitted sheet only," they are preventing tragedies, not just dodging lawsuits. You will often hear that approved bedding is a scam, or that previous generations survived sleeping with blankets just fine. Ignore the noise. Safety guidance is built on data from millions of babies. Memory is built on a sample size of one.
+
+---
+
+The pattern across all of these is the same: an idea sounds entirely reasonable, and you defer to it instead of verifying. It costs time, sleep, and stress.
+
+Our baseline now is simple: Track the numbers. Read the guidance. Ask the pediatrician. Look it up.
+
+Advice always comes from a good place. But love is not expertise, and memory is not data. Experience isn't knowing one baby for thirty years; it's seeing the same pattern across a thousand different ones.
