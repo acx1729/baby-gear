@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #fdfcfb;
+  }
+
+  /* Tighter list spacing in prose */
+  .prose ul > li > ul,
+  .prose ol > li > ol {
+    margin-top: 0.15em;
+    margin-bottom: 0.15em;
+  }
+
+  /* Warmer selection color */
+  ::selection {
+    background-color: #f5e6d6;
+    color: #2d2218;
+  }
+}
